@@ -1,0 +1,51 @@
+archetype (adl_version=1.4; uid=5ef437e3-201b-4362-bf3b-6c30600a8a48)
+	openEHR-TASK_PLANNING-TASK_PLAN.plandefinition.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2022-11-17">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["build_uid"] = <"ce960d33-faac-37b8-8a7e-8edc4353d0e5">
+		["MD5-CAM-1.0.1"] = <"061b46c2e82eb936a3e20ea4a76a06dd">
+	>
+
+definition
+	TASK_PLAN[at0000] matches {    -- PlanDefinition
+		principal_performer matches {
+			TASK_PARTICIPATION[at0004] matches {*}    -- TASK_PARTICIPATION
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"PlanDefinition">
+					description = <"PlanDefinition">
+				>
+				["at0004"] = <
+					text = <"TASK_PARTICIPATION">
+					description = <"">
+				>
+			>
+		>
+	>
